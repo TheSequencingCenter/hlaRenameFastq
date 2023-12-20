@@ -18,7 +18,14 @@ python3 hlaRenameFastq.py --help
 """
 
 # Setting up command line argument parser
-parser = argparse.ArgumentParser(description='Rename FASTQ files based on CSV data from AirTable.')
+parser = argparse.ArgumentParser(description="""\
+Rename FASTQ files based on CSV data from AirTable.
+
+This script requires two main inputs:
+                                 
+1. A CSV file containing data from AirTable.
+2. The directory where the FASTQ files are located.
+""")
 args = parser.parse_args()
 
 # Use the Downloads directory as the working directory
